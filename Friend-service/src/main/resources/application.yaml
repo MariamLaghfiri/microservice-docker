@@ -13,8 +13,8 @@ spring:
     name: friend-service
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://postgres:5432/social_networks
-    username: postgres
+    url: jdbc:postgresql://localhost:5432/social_networks
+    username: user
     password: password
   jpa:
     hibernate:

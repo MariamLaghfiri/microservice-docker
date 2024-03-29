@@ -35,6 +35,31 @@ services:
    networks:
      - social-network
 
+ gateway:
+   container_name: gateway-service
+   image: gateway-service
+   ports:
+     - "8222:8222"
+   networks:
+     - social-network
+
+ interaction-service:
+   container_name: interaction-service
+   image: interaction-service
+   ports:
+     - "8070:8070"
+   networks:
+     - social-network
+
+
+ post-service:
+   container_name: post-service
+   image: post-service
+   ports:
+     - "8074:8074"
+   networks:
+     - social-network
+
  zipkin:
   container_name: zipkin
   image: openzipkin/zipkin
